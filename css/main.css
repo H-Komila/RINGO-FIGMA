@@ -966,3 +966,140 @@
     font-size: 14px;
   }
 }
+/* ----------------------------------deck------------- */
+
+.deck__title{
+  font-family: Raleway;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 46px;
+color: #282B22;
+line-height: 125%;
+letter-spacing: 0%;
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+.deck__item{
+  width: 300px;
+ height: 250px;
+ box-shadow: 0 0 5px  0 rgb(230, 227, 226);
+ padding: 10px;
+}
+.deck__title1{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #282B22;
+  padding: 10px;
+font-family: Raleway;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+color: #3D4A39;
+line-height: 100%;
+letter-spacing: 0%;
+margin-bottom: 20px;
+}
+.deck__title2{
+  font-family: Raleway;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+color: #282B22;
+line-height: 100%;
+letter-spacing: 0%;
+margin-bottom: 20px;
+}
+.deck__text{
+  font-family: Raleway;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+color: #000000;
+opacity: 0.8;
+line-height: 145%;
+letter-spacing: 0%;
+margin-bottom: 20px;
+}
+.deck__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .deck__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .deck__item {
+    width: 45%; 
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .deck__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deck__item {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+.deck__item {
+  width: 300px;
+  height: 250px;
+  box-shadow: 0 0 5px 0 rgb(230, 227, 226);
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effekti */
+.deck__item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Raqam animatsiyasi */
+.deck__title1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #282B22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 24px;
+  color: #3D4A39;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+}
+
+
+.deck__item:hover .deck__title1 {
+  background: #3D4A39;
+  color: #fff;
+  transform: scale(1.1) rotate(10deg);
+}
+
+
+.deck__text {
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+
+.deck__item:hover .deck__text {
+  opacity: 1;
+  transform: translateY(-5px);
+}
