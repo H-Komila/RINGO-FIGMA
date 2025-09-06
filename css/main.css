@@ -13,10 +13,20 @@
     margin: 0 auto;
     padding: 20px;
 }
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1345689852945;
+ background: #fffffff5;
+
+}
 .header__container{
     display: flex;
     align-items: center;
     justify-content: space-around;
+   
 }
 .header__list{
     display: flex;
@@ -114,6 +124,7 @@ letter-spacing: 2px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: 100px;
 
 }
 .hero__title{
